@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/mainbackgroung">
+
+
+    <TextView
+        android:id="@+id/labaltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Explore Your Foods"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/notificationicon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/labaltext"
+        android:layout_alignBottom="@+id/labaltext"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="-2dp"
+
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_toEndOf="@+id/labaltext"
+        app:layout_constraintBottom_toBottomOf="@+id/labaltext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/labaltext" app:srcCompat="@drawable/notifications" />
+
+    <FrameLayout
+        android:id="@+id/FLAYOUT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/labaltext"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="?attr/actionBarSize"></FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/BNV"
+        app:itemTextColor="@color/white"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+         app:menu="@menu/menu"
+       app:itemPaddingBottom="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</RelativeLayout>

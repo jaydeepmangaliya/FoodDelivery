@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "212466111901",
+    "project_id": "databasefood-5d09b",
+    "storage_bucket": "databasefood-5d09b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212466111901:android:4ecd0a549c9e0210458b74",
+        "android_client_info": {
+          "package_name": "com.example.farmer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWAJRfJj4poyOE0_ICRhNLAzixdthzRQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
